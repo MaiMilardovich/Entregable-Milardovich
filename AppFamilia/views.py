@@ -22,6 +22,8 @@ def familia (request):
 
     familiar4.save()
 
-    return render(request , "AppFamilia/familia.html")
+    diccionario = { "familiar1":familiar1 , "familiar2":familiar2 , "familiar3":familiar3 , "familiar4":familiar4}
+
+    return render(request, "AppFamilia/familia.html" , context = diccionario )
 
 
